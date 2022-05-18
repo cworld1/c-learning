@@ -4,5 +4,5 @@
 
 void main() // 主函数（注意不接受传参）
 {
-    printf("Hello World"); // 打印
+    printf("Hello World!"); // 打印
 }
