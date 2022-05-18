@@ -1,0 +1,4 @@
+Digit:      4
+Letter:     5
+Space:      2
+Others:     3

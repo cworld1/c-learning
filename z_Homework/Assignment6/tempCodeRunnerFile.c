@@ -1,0 +1,1 @@
+ printf("%d", sewage_amt[i]);
