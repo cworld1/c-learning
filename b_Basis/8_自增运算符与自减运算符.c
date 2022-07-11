@@ -1,24 +1,20 @@
 #include <stdio.h>
 
-/* strcat: concatenate t to end of s; s must be big enough */
-int string_copy(char s[], char t[])
+/* strcat: concatenate append to end of origin; origin must be big enough */
+int string_copy(char origin[], char append[])
 {
-    int i, j;
-    i = j = 0;
-    while (s[i] != '\0') /* find end of s */
+    int i = 0, j = 0;
+    while (origin[i] != '\0') // 找到字符串结尾
         i++;
-    while ((s[i++] = t[j++]) != '\0') /* copy t */
+    while ((origin[i++] = append[j++]) != '\0') // 找到之后开始赋值
         ;
-    return i;
+    return i; // 最后返回新字符串长度
 }
 
 void main()
 {
-    char origin[10] = "the left",
-         append[10] = "the right";
+    char origin[20] = "the left",
+         append[] = "the right";
     int length = string_copy(origin, append);
-    for (int i = 0; i < length; i++)
-    {
-        printf("%s", origin[i]);
-    }
+    printf("%d in total.\n%s\n", length, origin);
 }
