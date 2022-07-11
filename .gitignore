@@ -85,3 +85,5 @@ dkms.conf
 ### Customize ###
 test.c
 Courses
+.SpaceVim.d
+vim.cmd
