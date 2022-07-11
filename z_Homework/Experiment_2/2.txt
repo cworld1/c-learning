@@ -1,0 +1,6 @@
+int main(){
+   float a, b, MAX;
+   scanf("%f,%f", &a, &b);
+   if (a > b) MAX = a;
+   else MAX = b;
+}
